@@ -8,6 +8,7 @@ RUN dnf -y install \
            libblkid-devel \
            csbuild \
            bc
+RUN mv /usr/bin/cppcheck /usr/bin/cppcheck.disabled
 
 workdir /workdir
 volume /workdir
